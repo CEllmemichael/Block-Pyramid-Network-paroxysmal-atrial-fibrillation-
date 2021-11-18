@@ -58,27 +58,11 @@ if __name__ == '__main__':
     model = mix_layer((2048, 1))
     # write_model_fix(model)
     model.summary()
-    # model.load_weights(r'/home/liutong/weishuhong/code1022/training_save_model/the104600th training record  of 0.h5')
     optimizer = optimizers.Adamax(lr=0.01, beta_1=0.9, beta_2=0.999, epsilon=1e-08)
     epochs = 100
     step = 0
 
     summary_writer = tf.summary.create_file_writer('./tensorboard')  # 参数为记录文件所保存的目录
-    # config = tf.ConfigProto()
-    # config.gpu_options.per_process_gpu_memory_fraction = 0.9 # 占用GPU90%的显存
-    # session = tf.Session(config=config)
-    # gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.9)
-    # with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options, log_device_placement=True),
-    #                 graph = detection_graph) as sess:
-    # os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    # tf.compat.v1.disable_eager_execution()
-    # hello = tf.constant('Hello,TensorFlow')
-    # config = tf.compat.v1.ConfigProto()
-    # config.gpu_options.per_process_gpu_memory_fraction = 0.9
-    # sess = tf.compat.v1.Session(config=config)
-
-    # gpus = tf.config.experimental.list_physical_devices(device_type='GPU')
-    # tf.config.experimental.set_visible_devices(devices=gpus[0:4], device_type='GPU')
     if os.path.exists('result'):  # 如果文件存在
         os.remove('result')
     x_test1, y_test1 = LoadData(flag='test', parts=30)
@@ -95,11 +79,6 @@ if __name__ == '__main__':
             # step = step + steps
             with tf.GradientTape() as tape:
                 logits = model(x_batch_train, training=True)
-                # logits_array = np.array(logits)
-                # logits_array[:, :, 0] = logits_array[:, :, 0]
-                # #logits_array[:, :, 1] = logits_array[:, :, 1]
-                # logits =tf.constant(logits_array)
-                # logits[:, :, 0] = logits[:, :, 0] * 0.1
                 loss_value = loss_fn(y_batch_train, logits)
             with summary_writer.as_default():  # 希望使用的记录器
                 tf.summary.scalar("loss", loss_value, step=step)

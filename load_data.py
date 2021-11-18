@@ -8,11 +8,11 @@ def LoadData(flag = 'train', parts = 50):
     if flag == 'train':
         list_lens = 1800
         test_size = 0.1
-        rootpath = r'E:\数据\2019生理信号挑战赛traindata'#此处修改文件夹的路径和文件的数目
+        rootpath = r'E:\traindata'#此处修改文件夹的路径和文件的数目
     elif flag == 'test':
         list_lens = 180
         test_size = 0.000001
-        rootpath = r'E:\数据\2019生理信号挑战赛testdata'
+        rootpath = r'E:\testdata'
 
     index = list(range(list_lens))#Creat a number list used for next step of shuffle
 
@@ -79,7 +79,7 @@ def LoadDataTorch(flag = 'train', parts = 50):
     if flag == 'train':
         list_lens = 1800
         test_size = 0.1
-        rootpath = r'E:\数据\2019生理信号挑战赛traindata'#此处修改文件夹的路径和文件的数目
+        rootpath = r'rootpath'#此处修改文件夹的路径和文件的数目
     elif flag == 'test':
         list_lens = 180
         test_size = 0.000001

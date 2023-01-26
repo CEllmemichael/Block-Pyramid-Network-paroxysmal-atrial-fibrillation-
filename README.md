@@ -15,7 +15,7 @@
 
 ![图片](https://user-images.githubusercontent.com/66575985/214835438-0fd93a8f-de9a-4d9b-a6ee-90617c2da94e.png)
 ## 数据预处理 Data processing
-![图片](https://user-images.githubusercontent.com/66575985/214837961-fabb81da-6800-4497-9442-73039ab90384.png)
+
 > Two ways for augmentation processing
 
 1:Differential processing
@@ -27,7 +27,7 @@ a:The difference is greater
 a:The difference is greater
 
 b:Reserve the noise component of the original signal
-
+![图片](https://user-images.githubusercontent.com/66575985/214837961-fabb81da-6800-4497-9442-73039ab90384.png)
 
 ## 本项目的方案 Game ideas
 + Part I : Cut out
@@ -58,7 +58,7 @@ There are five consecutive heart beats with atrial fibrillation and normal![图�
 
 
 ## 网络模型 Neural network design
-![图片](https://user-images.githubusercontent.com/66575985/214837501-229cf2ef-02b0-421a-8857-34c56af972aa.png)
+![图片](https://user-images.githubusercontent.com/66575985/214838478-f0f082f2-c22a-46a5-a9c4-4a9f4ded1aa0.png)
 > Fusion layer  makes better use of the two leads data provided by the competition
 
 

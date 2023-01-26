@@ -58,7 +58,7 @@ There are five consecutive heart beats with atrial fibrillation and normal![图�
 
 
 ## 网络模型 Neural network design
-![图片](https://user-images.githubusercontent.com/66575985/214838478-f0f082f2-c22a-46a5-a9c4-4a9f4ded1aa0.png)
+![图片](https://user-images.githubusercontent.com/66575985/214839244-700740f9-472c-4c28-860d-8948e641d22a.png)
 > Fusion layer  makes better use of the two leads data provided by the competition
 
 

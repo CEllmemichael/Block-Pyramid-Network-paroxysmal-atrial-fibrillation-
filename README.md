@@ -8,3 +8,10 @@
 ![图片](https://user-images.githubusercontent.com/66575985/214832259-13f26163-db8b-46df-a7b2-c66b5c32a4a3.png)
 ![图片](https://user-images.githubusercontent.com/66575985/214832410-df7c1a0e-78c2-40b1-a4d0-7d1958a06875.png)
 ![图片](https://user-images.githubusercontent.com/66575985/214832451-365863cc-fc5c-477d-8a03-d035225b59e2.png)
+实例：
+
+![图片](https://user-images.githubusercontent.com/66575985/214832901-f04b2c86-78fd-4c6f-8d61-479b46eb0994.png)
+系统输出：
+
+![图片](https://user-images.githubusercontent.com/66575985/214832949-dd05d47b-4c3b-49f7-bdab-e8f3a61f8c38.png)
+

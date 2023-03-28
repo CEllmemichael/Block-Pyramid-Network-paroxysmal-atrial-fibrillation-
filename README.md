@@ -1,10 +1,6 @@
 # Block Pyramid Network 
-
-包括心电信号预处理模块，一维卷积双交叉臂网络模块，房颤心拍风险提示模块以及外部接口模块。心电信号预处理模块用于对输入的心电信号进行预处理；
-一维卷积双交叉臂网络模块用于对双导联特征进行特征融合和选择；
-房颤心拍风险提示模块用于将输入的单导联心电信号特征输入到神经网络中，得到房颤心拍的置信度；
-外部接口模块用于兼容不同心电采集设备和报警输出接口。本系统还有一种包括上述系统的房颤风险提示设备。
-采用本系统的房颤风险提示系统，通过对两个导联的心拍进行融合并抽取特征，实现对双导联心拍进行高质量的房颤检测，有效提高双导联心拍的房颤检测准确率。
+The system includes four modules: the electrocardiogram (ECG) signal preprocessing module, the one-dimensional convolution double-cross arm network module, the atrial fibrillation (AF) heartbeat risk alert module, and the external interface module. The ECG signal preprocessing module is used to preprocess the input ECG signal; the one-dimensional convolution double-cross arm network module is used to fuse and select features of the dual-lead characteristics; the AF heartbeat risk alert module is used to input the single-lead ECG signal features into a neural network to obtain the confidence of AF heartbeat; the external interface module is used to be compatible with different ECG acquisition devices and alarm output interfaces. In addition, the system also includes an AF risk alert device that includes the above four modules. By fusing and extracting features from the heartbeats of two leads, the AF risk alert system using this system can achieve high-quality AF detection of dual-lead heartbeats, effectively improving the AF detection accuracy of dual-lead heartbeats.
+本系统包括四个模块：心电信号预处理模块、一维卷积双交叉臂网络模块、房颤心拍风险提示模块和外部接口模块。其中，心电信号预处理模块用于对输入的心电信号进行预处理；一维卷积双交叉臂网络模块用于对双导联特征进行特征融合和选择；房颤心拍风险提示模块用于将输入的单导联心电信号特征输入到神经网络中，得到房颤心拍的置信度；外部接口模块用于兼容不同心电采集设备和报警输出接口。此外，本系统还包括一个房颤风险提示设备，包括上述四个模块。采用本系统的房颤风险提示系统，通过对两个导联的心拍进行融合并抽取特征，能够实现对双导联心拍进行高质量的房颤检测，有效提高双导联心拍的房颤检测准确率。
 
 ## 竞赛题目：The 4th China Physiological Signal Challenge 2021 (CPSC 2021) aims to encourage the development of algorithms for searching the paroxysmal atrial fibrillation (PAF) events from dynamic ECG recording
 网址：（http://2021.icbeb.org/CPSC2021）
